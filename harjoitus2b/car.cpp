@@ -49,15 +49,15 @@ string Car::getBrand() const
     return brand;
 }
 
-// printData - metodin määrittely
+// Tulostus -metodit
 void Car::printData() const {
 
         cout << "Merkki: " << getBrand() << endl;
         cout << "Malli: " << getModel() << endl;
         cout << "Vuosimalli: " << getYearModel() << endl;
         cout << "**********" << endl;
-
-
 }
+
+
 
 

@@ -28,5 +28,9 @@ int main()
         carList[i].printData();
     }
 
+    // Tulostetaan listan toisen alkion tiedot
+    cout << "LISTAN TOISEN ALKION TIEDOT " << endl;
+    carList[1].printData();
+
     return 0;
 }
