@@ -8,7 +8,7 @@ using namespace std;
 Car::Car() : brand("undefined"), model("undefined") {}
 
 // Parametrillinen rakentaja
-Car::Car(const Engine &engine,const Wheel &wheel1, const Wheel &wheel2, const Wheel &wheel3, const Wheel &wheel4, const string &model, const string &brand)
+Car::Car(const Engine &engine, const Wheel &wheel1, const Wheel &wheel2, const Wheel &wheel3, const Wheel &wheel4, const string &model, const string &brand)
     : engine(engine), wheel1(wheel1), wheel2(wheel2), wheel3(wheel3), wheel4(wheel4), model(model), brand(brand) {}
 
 
@@ -23,7 +23,14 @@ void Car::setEngine()
 void Car::setWheels()
 {
 
-    // Lisätään toteutus renkaiden toteutukselle
+    wheel1.setSize(17);
+    wheel1.setType("Kesarengas");
+    wheel2.setSize(17);
+    wheel2.setType("Kesarengas");
+    wheel3.setSize(17);
+    wheel3.setType("Kesarengas");
+    wheel4.setSize(17);
+    wheel4.setType("Kesarengas");
 
 }
 
@@ -52,6 +59,13 @@ string Car::getModel() const
 
 void Car::printDetails() const
 {
+
+    cout << "Auto: " << model << " " << brand << endl;
+    cout << "Moottori: " << engine.getHorsepower() << " hp, " << engine.getDisplacement() << " L" << endl;
+    cout << "Rengas 1: " << wheel1.getSize() << " Tuumaa, " << wheel1.getType() << endl;
+    cout << "Rengas 2: " << wheel1.getSize() << " Tuumaa, " << wheel1.getType() << endl;
+    cout << "Rengas 3: " << wheel1.getSize() << " Tuumaa, " << wheel1.getType() << endl;
+    cout << "Rengas 4: " << wheel1.getSize() << " Tuumaa, " << wheel1.getType() << endl;
 
 
 }

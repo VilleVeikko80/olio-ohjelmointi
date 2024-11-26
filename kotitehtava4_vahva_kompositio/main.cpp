@@ -9,7 +9,16 @@ using namespace std;
 int main()
 {
 
+    // Pinomuisti
     Car car;
+
+    car.setBrand("Toyota");
+    car.setModel("Corolla");
+
+    car.setEngine();
+    car.setWheels();
+
+    car.printDetails();
 
 
 

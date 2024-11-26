@@ -6,7 +6,7 @@
 using namespace std;
 
 // Oletusrakentaja
-Wheel::Wheel() : size(0), type(" ") {}
+Wheel::Wheel() : size(0), type("undefined") {}
 
 // Parametrillinen rakentaja
 Wheel::Wheel(int size, const string &type) : size(size), type(type) {}

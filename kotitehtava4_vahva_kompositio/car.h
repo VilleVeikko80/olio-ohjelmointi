@@ -25,7 +25,7 @@ public:
     Car();
 
     // Parametrillinen rakentaja
-    Car(const string &model, const string &brand);
+    Car(const Engine &engine, const Wheel &wheel1, const Wheel &wheel2, const Wheel &wheel3, const Wheel &wheel4, const string &model, const string &brand);
 
     // Setterit
 
